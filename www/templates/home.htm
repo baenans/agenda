@@ -1,11 +1,82 @@
-{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	 <link rel="stylesheet" type="text/css" href='{% static "css/style.css" %}'>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href='{% static "css/style.css" %}'>
+    <link href="../../static/bootstrap-3.1.0-dist/dist/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../../static/bootstrap-3.1.0-dist/dist/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
+    
+    <div class="container">
+        <!--=Header-->
+        <div class="page-header">
+            <h1>Taller de Git</h1>
+            <p class="lead">
+                <small> Demo simple: Agenda Python/HTML5/Bootstrap</small>
+            </p>
+        </div>
+        <!--=Table panel-->
+        <div class="panel panel-default center-block">
+            <!--=Table heading -->
+            <div class="panel-heading">Agenda</div>
+            <!--=Table content -->
+            <table class="table">
+                <tr id="fields-title">
+                    <td>Nombre</td>
+                    <td>Apellidos</td>
+                    <td>Teléfono</td>
+                    <td>Email</td>
+                </tr>
+            </table>
+            <div class="panel-footer">
+            </div>
+        </div>
+        <!--=Input form-->
+        <div class="jumbotron">
+            <h3>Nuevo contacto:</h3>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="input-group">
+                        <input id="Nombre_input" type="text"  class="form-control" placeholder="Nombre">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <input id="Apellidos_input" type="text" class="form-control" placeholder="Apellidos">
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="input-group">
+                        <input id="Telefono_input" type="text" class="form-control" placeholder="Teléfono">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <input id="Email_input" type="text" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-11"></div>
+                <div class="col-md-12">
+                    <button id="add_button" type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-plus"></span> Añadir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 </body>
+
 </html>
